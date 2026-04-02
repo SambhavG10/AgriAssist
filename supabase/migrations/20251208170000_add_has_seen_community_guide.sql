@@ -1,0 +1,1 @@
+ALTER TABLE profiles ADD COLUMN IF NOT EXISTS has_seen_community_guide BOOLEAN DEFAULT FALSE;
