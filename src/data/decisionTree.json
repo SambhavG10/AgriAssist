@@ -1,0 +1,51 @@
+{
+  "type": "decision",
+  "field": "has_own_land",
+  "yes": {
+    "type": "decision",
+    "field": "land_upto_2ha",
+    "yes": {
+      "type": "decision",
+      "field": "in_NE_state",
+      "yes": {
+        "type": "decision",
+        "field": "in_organic_cluster_NE",
+        "yes": {
+          "type": "leaf",
+          "sno": 101,
+          "core_schemes": ["pm_kisan", "pmfby"],
+          "conditional_schemes": [
+            {
+              "scheme_id": "movcd_ner",
+              "condition": "Available only if you remain in a registered organic cluster"
+            }
+          ]
+        },
+        "no": {
+          "type": "leaf",
+          "sno": 102,
+          "core_schemes": ["pm_kisan", "pmfby"],
+          "conditional_schemes": []
+        }
+      },
+      "no": {
+        "type": "leaf",
+        "sno": 103,
+        "core_schemes": ["pm_kisan", "pmfby"],
+        "conditional_schemes": []
+      }
+    },
+    "no": {
+      "type": "leaf",
+      "sno": 104,
+      "core_schemes": ["pmfby", "kcc"],
+      "conditional_schemes": []
+    }
+  },
+  "no": {
+    "type": "leaf",
+    "sno": 105,
+    "core_schemes": ["kcc"],
+    "conditional_schemes": []
+  }
+}

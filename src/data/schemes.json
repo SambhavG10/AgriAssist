@@ -1,0 +1,122 @@
+[
+  {
+    "id": "pm_kisan",
+    "name": "PM-KISAN Samman Nidhi",
+    "ministry": "Ministry of Agriculture",
+    "description": "PM-KISAN provides income support of ₹6,000 per year to eligible farmer families in three equal installments.",
+    "maxIncome": 1000000,
+    "maxLandHa": 2,
+    "locationNotes": "Available in all Indian states",
+    "eligibleCrops": ["All crops"],
+    "benefits": "₹6,000 per year directly transferred to bank account",
+    "howToApply": "Apply through nearest CSC center, agriculture department office, or assisted registration."
+  },
+  {
+    "id": "pmfby",
+    "name": "Pradhan Mantri Fasal Bima Yojana",
+    "ministry": "Ministry of Agriculture",
+    "description": "Crop insurance scheme that protects farmers from crop losses due to natural calamities, pests, and diseases.",
+    "maxIncome": null,
+    "maxLandHa": null,
+    "locationNotes": "Available in notified districts across India",
+    "eligibleCrops": ["Rice", "Wheat", "Maize", "Cotton", "Pulses", "Oilseeds"],
+    "benefits": "Very low insurance premium with full crop loss protection",
+    "howToApply": "Apply through your bank while taking crop loan or via agriculture office."
+  },
+  {
+    "id": "kcc",
+    "name": "Kisan Credit Card",
+    "ministry": "Ministry of Finance",
+    "description": "Provides short-term credit for farmers to purchase seeds, fertilizers, pesticides, and equipment.",
+    "maxIncome": null,
+    "maxLandHa": null,
+    "locationNotes": "Available in all Indian states",
+    "eligibleCrops": ["All crops"],
+    "benefits": "Low-interest loan with flexible repayment",
+    "howToApply": "Apply at any nationalized or cooperative bank."
+  },
+  {
+    "id": "movcd_ner",
+    "name": "MOVCD-NER Organic Farming Scheme",
+    "ministry": "Ministry of Agriculture",
+    "description": "Supports organic farming in North Eastern states through organic inputs, certification, and training.",
+    "maxIncome": null,
+    "maxLandHa": null,
+    "locationNotes": "Only for North Eastern states of India",
+    "eligibleCrops": ["Organic vegetables", "Spices", "Fruits", "Millets"],
+    "benefits": "Free organic inputs, certification support, farmer training",
+    "howToApply": "Apply through State Agriculture Department under cluster approach."
+  },
+  {
+    "id": "subsidy_drip_irrigation",
+    "name": "Micro Irrigation Subsidy Scheme",
+    "ministry": "Ministry of Jal Shakti",
+    "description": "Provides subsidy for drip and sprinkler irrigation systems to save water and increase yield.",
+    "maxIncome": null,
+    "maxLandHa": null,
+    "locationNotes": "Available in most Indian states",
+    "eligibleCrops": ["Vegetables", "Sugarcane", "Cotton", "Horticulture crops"],
+    "benefits": "Up to 55% subsidy on irrigation equipment",
+    "howToApply": "Apply through agriculture department irrigation scheme portal."
+  },
+  {
+    "id": "soil_health_card",
+    "name": "Soil Health Card Scheme",
+    "ministry": "Ministry of Agriculture",
+    "description": "Provides farmers with detailed soil test reports and fertilizer recommendations.",
+    "maxIncome": null,
+    "maxLandHa": null,
+    "locationNotes": "Available across India",
+    "eligibleCrops": ["All crops"],
+    "benefits": "Free soil test reports with crop-wise fertilizer guidance",
+    "howToApply": "Apply through local agriculture office or soil testing labs."
+  },
+  {
+    "id": "pmksy",
+    "name": "Pradhan Mantri Krishi Sinchai Yojana",
+    "ministry": "Ministry of Jal Shakti",
+    "description": "Improves irrigation facilities and water use efficiency for farms.",
+    "maxIncome": null,
+    "maxLandHa": null,
+    "locationNotes": "Available across India",
+    "eligibleCrops": ["All crops"],
+    "benefits": "Irrigation infrastructure support and water conservation",
+    "howToApply": "Apply through district irrigation department."
+  },
+  {
+    "id": "nfsm",
+    "name": "National Food Security Mission",
+    "ministry": "Ministry of Agriculture",
+    "description": "Aims to increase production of rice, wheat, pulses, and coarse cereals.",
+    "maxIncome": null,
+    "maxLandHa": null,
+    "locationNotes": "Available in mission districts",
+    "eligibleCrops": ["Rice", "Wheat", "Pulses", "Millets"],
+    "benefits": "Seed subsidy, machinery support, training programs",
+    "howToApply": "Apply through district agriculture office."
+  },
+  {
+    "id": "rashtriya_krishi_vikas_yojana",
+    "name": "Rashtriya Krishi Vikas Yojana",
+    "ministry": "Ministry of Agriculture",
+    "description": "Provides funding to states for agricultural infrastructure and farmer welfare.",
+    "maxIncome": null,
+    "maxLandHa": null,
+    "locationNotes": "Implemented by state governments",
+    "eligibleCrops": ["All crops"],
+    "benefits": "Farm mechanization, cold storage, processing units",
+    "howToApply": "Apply through state agriculture department."
+  },
+  {
+    "id": "pashu_kisan_credit_card",
+    "name": "Pashu Kisan Credit Card",
+    "ministry": "Ministry of Fisheries, Animal Husbandry and Dairying",
+    "description": "Special credit card scheme for livestock and dairy farmers.",
+    "maxIncome": null,
+    "maxLandHa": null,
+    "locationNotes": "Available across India",
+    "eligibleCrops": ["Dairy", "Poultry", "Goat farming", "Pig farming"],
+    "benefits": "Low-interest loans for animal husbandry",
+    "howToApply": "Apply through cooperative banks and dairy unions."
+  }
+]

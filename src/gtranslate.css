@@ -1,0 +1,41 @@
+/* Remove card look */
+.gtranslate_wrapper .gt_dropdown {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+/* Remove white box */
+.gtranslate_wrapper .gt_selected {
+  background: transparent !important;
+  padding: 0 !important;
+  font-size: 16px !important;
+}
+
+/* Reduce flag size */
+.gtranslate_wrapper img {
+  height: 16px !important;
+  width: 22px !important;
+  border-radius: 4px !important;
+}
+
+/* Text style */
+.gtranslate_wrapper .gt_selected span {
+  font-size: 14px !important;
+  color: #374151 !important; /* Tailwind gray-700 */
+  font-weight: 500 !important;
+}
+
+/* Dropdown menu */
+.gt_options {
+  border-radius: 8px !important;
+  padding: 4px 0 !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15) !important;
+  background: white !important;
+}
+
+/* Dropdown hover */
+.gt_options .gt_option:hover {
+  background: #f3f4f6 !important; /* Tailwind gray-100 */
+}
