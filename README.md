@@ -8,7 +8,7 @@ Built using **React, Vite, TypeScript, Node.js, Express, Supabase, Tailwind CSS*
 
 ## 🌐 Live Demo
 
-**🔗 Live Application:** [https://agriassist-frontend-u9gr.onrender.com](https://ai-agriculture-rbf3.onrender.com)
+**🔗 Live Application:** [AgriAssist](https://ai-agriculture-rbf3.onrender.com)
 
 ---
 
@@ -213,7 +213,7 @@ The application is deployed on **Render** using a unified deployment architectur
 
 **Live URL**
 
-https://agriassist-frontend-u9gr.onrender.com
+[AgriAssist](https://ai-agriculture-rbf3.onrender.com)
 
 ---
 
