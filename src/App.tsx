@@ -14,7 +14,7 @@ import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 import PostDetails from "./pages/PostDetails";
 import ChatRoom from "./pages/ChatRoom";
-import AIChat from "./pages/AIChat";
+
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
 import { LoggerProvider } from "./context/LoggerContext";
@@ -70,7 +70,7 @@ const App = () => (
             <Route path="/chat" element={<ChatBot />} />
             <Route path="/chat-rooms" element={<ChatRooms />} />
             <Route path="/chat-rooms/:id" element={<ChatRoom />} />
-            <Route path="/ai-chat" element={<AIChat />} />
+
             <Route path="/market-prices" element={<MarketPrices />} />
             <Route path="/profile" element={<Profile />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

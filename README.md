@@ -1,133 +1,280 @@
-<div align="center">
-  <h1>🌱 AgriAssist - AI-Powered Agricultural Assistant</h1>
-  <p>A modern, web-based toolkit & platform designed to provide farmers, researchers, and agriculture enthusiasts with instant access to personalized information, live market prices, and a supportive community.</p>
-</div>
+# 🌱 AgriAssist – AI-Powered Agricultural Assistant
+
+An intelligent full-stack web platform that empowers farmers with AI-driven crop guidance, weather insights, live market prices, government schemes, and a collaborative farming community.
+
+Built using **React, Vite, TypeScript, Node.js, Express, Supabase, Tailwind CSS**, and powered by **Google Gemini AI** to deliver a modern and accessible digital farming experience.
 
 ---
 
-## ✨ Key Features
+## 🌐 Live Demo
 
-### 🤖 Intelligent AI & Personalization
-- **Multi-Language AI Chatbot:** Get instant agricultural advice in your native language (Support for English, Hindi, Malayalam, and more).
-- **Personalized Crop Suggestions:** Receive localized advice based on your specific crop choices and regional climate mapping.
-- **Speech-to-Text Integration:** Easily ask questions using your voice via Hugging Face STT.
-- **Image Upload Support:** Upload pictures of crops to get tailored help and diagnostics.
-
-### 🛠️ Comprehensive Farmer Toolkit
-- **Live Market Price Tracking:** Stay updated with the latest crop market prices in real-time.
-- **Government Schemes Directory:** Explore and apply for agricultural schemes and subsidies.
-- **Daily Task Management:** Organize farming routines and keep track of to-do lists.
-- **Farming Calculators:** Use built-in tools for seed rate, fertilizer conversion, and yield estimation.
-
-### 🌍 Dynamic Community & Forums
-- **Community Posts & Discussions:** Create posts and engage with fellow farmers in real-time.
-- **"My Posts" Dashboard:** Easily view and manage your own contributions and questions.
-- **Interactive Chat Rooms:** Join or create topic-specific, live multiplayer chat rooms.
-
-### 📱 Modern & Accessible
-- **100% Mobile Responsive:** Designed for seamless use on smartphones, tablets, and desktops.
-- **Redesigned User Profiles:** Modern, user-friendly interface for managing your farm's profile.
-- **Secure Authentication:** Safe and fast Login/Signup powered by Supabase Auth (Magic Links, Biometrics, Passwordless).
+**🔗 Live Application:** https://agriassist-frontend-u9gr.onrender.com
 
 ---
 
-## 🛠️ Technology Stack
+# ✨ Key Features
 
-**Frontend:**
-- **Framework:** React + Vite
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS + shadcn/ui
-- **Routing:** React Router
+## 🤖 AI-Powered Agricultural Assistant
 
-**Backend:**
-- **Server Environment:** Node.js + Express
-- **Database:** Supabase Postgres
-- **Authentication:** Supabase Auth & WebAuthn
-- **Storage:** Supabase Storage (for avatars and community image uploads)
-
-**AI & APIs:**
-- **Chatbot & Brain:** Google Gemini AI Model (`gemini-2.5-flash`)
-- **Speech Recognition:** Hugging Face Inference API (`distil-whisper/distil-large-v2`)
-- **Weather Data:** OpenWeatherMap API
+* Multi-language AI chatbot powered by **Google Gemini AI**
+* Personalized crop guidance based on user inputs
+* Speech-to-Text support using **Hugging Face Whisper**
+* Image upload support for crop-related queries
+* Context-aware agricultural recommendations
 
 ---
 
-## 🚀 Getting Started (Local Development)
+## 🌦 Weather Insights
 
-We have streamlined our local setup process! You no longer need Docker to run the backend locally. Our single `npm start` command runs both the frontend and the NodeJS backend concurrently.
+* Real-time weather forecasts
+* Location-based weather information
+* Farming recommendations based on weather conditions
+* Early awareness for adverse weather situations
 
-### 1. Prerequisites
-Ensure you have the following installed on your machine:
-- [Node.js](https://nodejs.org/) (Version 18 or higher)
-- [Git](https://git-scm.com/)
+---
 
-### 2. Clone and Install
+## 📈 Live Market Prices
+
+* Real-time agricultural commodity prices
+* Easy access to crop market information
+* Supports better selling and planning decisions
+
+---
+
+## 🌾 Farmer Productivity Toolkit
+
+* Daily farming task manager
+* Crop planning assistance
+* Seed rate calculator
+* Fertilizer conversion calculator
+* Yield estimation tools
+
+---
+
+## 🏛 Government Schemes
+
+* Browse agricultural schemes
+* Explore farmer subsidies
+* Access government welfare initiatives
+
+---
+
+## 🌍 Community Platform
+
+* Create and share community posts
+* Participate in farming discussions
+* "My Posts" dashboard
+* Real-time chat rooms
+* Knowledge sharing among farmers
+
+---
+
+## 🔐 Secure Authentication
+
+* Supabase Authentication
+* Passwordless login
+* Magic Link Authentication
+* WebAuthn / Biometric Authentication
+* Secure user profile management
+
+---
+
+## 📱 Responsive Design
+
+* Mobile-first interface
+* Optimized for desktop, tablet, and smartphones
+* Clean UI built using Tailwind CSS and shadcn/ui
+
+---
+
+# 🛠️ Technology Stack
+
+### Frontend
+
+* React
+* Vite
+* TypeScript
+* Tailwind CSS
+* shadcn/ui
+* React Router
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database & Backend Services
+
+* Supabase PostgreSQL
+* Supabase Authentication
+* Supabase Storage
+* Supabase Realtime
+
+### AI & External APIs
+
+* Google Gemini AI (gemini-2.5-flash)
+* Hugging Face Whisper API
+* OpenWeatherMap API
+
+---
+
+# 🏗️ System Overview
+
+```text
+                           User
+                             │
+                             ▼
+                   React + Vite Frontend
+                             │
+          ┌──────────────────┼──────────────────┐
+          ▼                  ▼                  ▼
+     Express API        Google Gemini       Supabase
+          │                  │                  │
+          │                  │                  ├── Authentication
+          │                  │                  ├── PostgreSQL Database
+          │                  │                  ├── Storage
+          │                  │                  └── Realtime Services
+          ▼
+ OpenWeatherMap API • Hugging Face Whisper • Market Data
+```
+
+---
+
+# 🚀 Getting Started
+
+## Prerequisites
+
+* Node.js (v18 or above)
+* Git
+
+---
+
+## Clone the Repository
+
 ```bash
-git clone https://github.com/SambhavG10/ai-agriculture.git
-cd ai-agriculture
+git clone https://github.com/sanjay-dtu/AgriAssist.git
+
+cd AgriAssist
+
 npm install
 ```
 
-### 3. Environment Variables Setup
-To run the server, you must provide your API keys. 
-1. Create a file named `.env` in the root folder of the project.
-2. Copy the structure below into your `.env` file and replace the placeholder values with your actual API keys.
+---
+
+## Environment Variables
+
+Create a `.env` file in the project root.
 
 ```env
-# ✅ REQUIRED - Supabase (Database & Auth)
-VITE_SUPABASE_URL="https://your-project.supabase.co"
-VITE_SUPABASE_PUBLISHABLE_KEY="your-anon-pub-key"
-SUPABASE_SERVICE_ROLE_KEY="your-service-role-key"
+# Supabase Configuration
+VITE_SUPABASE_URL=
 
-# ✅ REQUIRED - Google Gemini AI
-# Used by the frontend for static AI features
-VITE_GEMINI_API_KEY="your-gemini-key"
-# Used by the NodeJS backend for complex chatbots
-GEMINI_API_KEY="your-gemini-key"
+VITE_SUPABASE_PUBLISHABLE_KEY=
 
-# 🔧 OPTIONAL (But Recommended)
-OPENWEATHERMAP_API_KEY="your-openweathermap-key"
-HUGGINGFACE_API_KEY="your-huggingface-key"
+SUPABASE_SERVICE_ROLE_KEY=
+
+# Google Gemini AI
+VITE_GEMINI_API_KEY=
+
+GEMINI_API_KEY=
+
+# Weather API
+OPENWEATHERMAP_API_KEY=
+
+# Speech-to-Text
+HUGGINGFACE_API_KEY=
 ```
 
-### 4. Start the Application
-Run the following command to spin up BOTH the Vite frontend and the Node backend server simultaneously:
+---
+
+## Run Locally
 
 ```bash
 npm start
 ```
-* **Frontend:** Starts on `http://localhost:8080`
-* **Backend:** Starts on `http://localhost:3000`
+
+Frontend
+
+```text
+http://localhost:8080
+```
+
+Backend
+
+```text
+http://localhost:3000
+```
 
 ---
 
-## 🌐 Deploying to Production (Render.com)
+# ☁️ Deployment
 
-The project includes a `render.yaml` configuration for seamless deployment.
+The application is deployed on **Render** using a unified deployment architecture where the Express server serves both the backend APIs and the React frontend.
 
-1. Create an account on [Render](https://render.com/).
-2. Select **New** > **Blueprint**.
-3. Connect this GitHub repository.
-4. Render will automatically detect the `render.yaml` file and prompt you to input your `.env` variables in their dashboard securely.
-5. Click **Apply**! Your single Render Web Service will automatically serve both the backend API and static frontend.
+**Live URL**
+
+https://agriassist-frontend-u9gr.onrender.com
 
 ---
 
-## 🚧 Challenges & Problems Faced
+# 🚧 Challenges Faced
 
-Building AgriAssist involved several complex challenges that required innovative solutions:
-- **Deployment Architecture:** Initially, separating the frontend (Vite) and backend (Edge Functions) led to CORS issues and complicated deployment pipelines. *Solution:* We unified the deployment using a Node.js Express server that simultaneously handles API requests and serves the static React frontend. This makes platforms like Render.com able to host everything on a single Web Service.
-- **Cross-Platform Compatibility:** Ensuring commands like `npm start` worked reliably across Windows, Mac, and Linux environments required swapping out OS-specific shell commands for robust cross-platform utilities (`concurrently`).
-- **Express 5 Routing Constraints:** Migrating to Express 5 introduced strict routing rules (e.g., wildcard string `/*` deprecation), which we resolved by implementing safer regular expression (`/.*/`) wildcards for SPA React Router fallbacks.
-- **AI API Stability:** Balancing API rate limits and strict model naming conventions required robust error handling and fallback logic in our chatbot server.
+Developing **AgriAssist** involved solving several practical challenges that are common in modern AI-powered full-stack applications.
+
+### 🔄 Frontend & Backend Integration
+
+Coordinating communication between the React frontend and Express backend required careful API design, routing, and asynchronous request handling. Ensuring smooth data flow across multiple modules while maintaining responsiveness was one of the key development challenges.
 
 ---
 
-## 🔮 Upcoming Features (Roadmap)
+### 🌐 Production Deployment
+
+Deploying the application was significantly different from running it locally. Configuring the project for Render, defining appropriate build and start commands, managing environment variables securely, and ensuring both frontend and backend worked together in production required multiple deployment iterations before achieving a stable setup.
+
+---
+
+### 🔐 Secure API Key Management
+
+The platform integrates multiple third-party services including Google Gemini AI, Supabase, OpenWeatherMap, and Hugging Face. Keeping API keys secure while allowing seamless communication required moving sensitive operations to the backend and using environment variables instead of exposing credentials on the client side.
+
+---
+
+### 🤖 AI Response Reliability
+
+AI-generated responses can sometimes be delayed or return unexpected results. Proper validation, error handling, and fallback mechanisms were implemented to improve reliability and provide users with meaningful feedback even when external AI services encounter issues.
+
+---
+
+### 🗄 Managing Real-Time Features
+
+Building community discussions and chat rooms required synchronizing user-generated content across multiple clients in real time. Implementing these features using Supabase Realtime while maintaining consistency and performance presented an important architectural challenge.
+
+---
+
+### 📱 Responsive User Experience
+
+Creating a seamless experience across desktops, tablets, and smartphones involved extensive UI optimization and testing. The interface was carefully designed to remain intuitive and accessible regardless of screen size.
+
+---
+
+### ⚙ Cross-Platform Development
+
+The project was developed with compatibility in mind, ensuring that development and execution worked reliably across Windows, macOS, and Linux by avoiding operating system-specific dependencies and adopting cross-platform tooling.
+
+---
+
+### 📈 Scalability & Maintainability
+
+As features such as AI assistance, weather forecasting, market prices, calculators, authentication, and community modules were integrated, maintaining a modular architecture became essential. Reusable components, organized folder structures, and well-defined backend services were adopted to simplify future development and maintenance.
+
+---
+
+# 🔮 Upcoming Features (Roadmap)
 
 We are constantly working to make AgriAssist the ultimate tool for modern farming. Here is what we are planning next:
-- **Offline Mode (PWA):** Access critical farm data, tasks, and calculators even without an internet connection.
-- **AI Crop Disease Diagnostics:** A computer-vision model allowing farmers to scan infected leaves using their phone camera and instantly receive treatment recommendations.
-- **IoT Data Integration:** Connect AgriAssist with smart soil moisture and temperature sensors for real-time farm monitoring.
-- **Hyper-Local Weather Alerts:** SMS or push notifications for incoming extreme weather events (frost, heavy rains, drought warnings) based on exact farm coordinates.
-- **Market Price Trends & Forecasting:** Interactive historical graphs and AI predictions for future crop prices to help farmers decide the most profitable time to sell.
+
+* **Offline Mode (PWA):** Access critical farm data, tasks, and calculators even without an internet connection.
+* **AI Crop Disease Diagnostics:** A computer-vision model allowing farmers to scan infected leaves using their phone camera and instantly receive treatment recommendations.
+* **IoT Data Integration:** Connect AgriAssist with smart soil moisture and temperature sensors for real-time farm monitoring.
+* **Hyper-Local Weather Alerts:** SMS or push notifications for incoming extreme weather events (frost, heavy rains, drought warnings) based on exact farm coordinates.
+* **Market Price Trends & Forecasting:** Interactive historical graphs and AI predictions for future crop prices to help farmers decide the most profitable time to sell.
