@@ -550,7 +550,7 @@ if (fs.existsSync(distPath)) {
 
 // Fallback for SPA routing (React Router)
 if (fs.existsSync(distPath)) {
-  app.get('*', (req, res) => {
+  app.get(/.*/, (req, res) => {
     if (!req.url.startsWith('/api')) {
       res.sendFile(path.join(distPath, 'index.html'));
     }
