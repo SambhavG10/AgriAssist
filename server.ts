@@ -1,4 +1,6 @@
 import express, { Request, Response } from 'express';
+import path from 'path';
+import fs from 'fs';
 import cors from 'cors';
 import { 
   generateRegistrationOptions, 
@@ -538,6 +540,22 @@ app.post('/api/chatbots', (req: Request, res: Response) => {
   req.url = '/api/chatbot';
   app.handle(req, res);
 });
+
+// Serve static files from the Vite build directory
+const distPath = path.resolve(process.cwd(), 'dist');
+if (fs.existsSync(distPath)) {
+  app.use(express.static(distPath));
+  console.log('[Server] Serving static files from:', distPath);
+}
+
+// Fallback for SPA routing (React Router)
+if (fs.existsSync(distPath)) {
+  app.get('*', (req, res) => {
+    if (!req.url.startsWith('/api')) {
+      res.sendFile(path.join(distPath, 'index.html'));
+    }
+  });
+}
 
 // Start Server
 app.listen(port, () => {
