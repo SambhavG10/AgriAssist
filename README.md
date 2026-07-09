@@ -152,7 +152,7 @@ Built using **React, Vite, TypeScript, Node.js, Express, Supabase, Tailwind CSS*
 ## Clone the Repository
 
 ```bash
-git clone https://github.com/sanjay-dtu/AgriAssist.git
+git clone https://github.com/SambhavG10/AgriAssist.git
 
 cd AgriAssist
 
